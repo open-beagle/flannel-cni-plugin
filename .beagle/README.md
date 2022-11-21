@@ -22,6 +22,7 @@ rm -rf vendor && go mod vendor
 docker run -it --rm \
 -w /go/src/github.com/flannel-io/cni-plugin \
 -v $PWD/:/go/src/github.com/flannel-io/cni-plugin \
+-e VERSION=v1.2.0 \
 registry.cn-qingdao.aliyuncs.com/wod/golang:1.19-alpine \
 bash .beagle/build.sh
 ```
