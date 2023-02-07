@@ -5,7 +5,7 @@
 ```bash
 git remote add upstream git@github.com:flannel-io/cni-plugin.git
 git fetch upstream
-git merge v1.2.0
+git merge v1.1.2
 ```
 
 ## build
@@ -22,7 +22,7 @@ rm -rf vendor && go mod vendor
 docker run -it --rm \
 -w /go/src/github.com/flannel-io/cni-plugin \
 -v $PWD/:/go/src/github.com/flannel-io/cni-plugin \
--e TAG=v1.2.0 \
+-e TAG=v1.1.2 \
 registry.cn-qingdao.aliyuncs.com/wod/golang:1.19-alpine \
 bash .beagle/build.sh
 ```
