@@ -10,3 +10,6 @@ scripts/build_flannel.sh
 
 export GOARCH=ppc64le 
 scripts/build_flannel.sh
+
+export GOARCH=mips64le 
+scripts/build_flannel.sh
